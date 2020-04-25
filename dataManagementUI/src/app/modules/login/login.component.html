@@ -1,0 +1,9 @@
+<div class="container align-self-center form-body">
+    <form class="form-group" [formGroup]="loginForm">
+        <input class="form-control" type="number" name="EmployeeCode" placeholder="Employee Code" formControlName="employeeCode">
+        <input class="form-control" type="text" name="Password" placeholder="Password" formControlName="password">
+        <button class="btn btn-outline-success btn-lg justify-content-between" type="submit" (click)="onSubmit(loginForm)"
+        [disabled]="!loginForm.valid">Login</button>
+    </form>
+    <p>New User <a href="register">Click here</a></p>
+    </div>

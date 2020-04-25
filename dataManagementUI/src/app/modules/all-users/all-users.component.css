@@ -1,0 +1,20 @@
+.card-body{
+    font-size: small;
+    border-radius: 15px !important;
+    border: 1px solid rgb(170, 168, 168) !important;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 1px 1px #645d5d;
+}
+.card{
+    background-color: #EFEFEF !important;
+    border: 0;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mr-1{
+    margin-right: 15px;
+}

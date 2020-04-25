@@ -1,0 +1,11 @@
+<div class="container form-body">
+<form class="form-group" [formGroup]="registerForm">
+    <input class="form-control" type="number" name="EmployeeCode" placeholder="Employee Code" formControlName="employeeCode">
+    <input class="form-control" type="text" name="Name" placeholder="Name" formControlName="name">
+    <input class="form-control" type="date" name="DateofBirth" placeholder="Date of Birth" formControlName="dateOfBirth">
+    <input class="form-control" type="text" name="Password" placeholder="Password" formControlName="password">
+    <button class="form-control" class="btn btn-outline-success btn-lg" type="submit" (click)="onSubmit(registerForm)"
+    [disabled]="!registerForm.valid">Register</button>
+</form>
+<p>Already registered <a href="login">Click here</a></p>
+</div>

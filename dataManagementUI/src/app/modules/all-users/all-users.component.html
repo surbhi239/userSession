@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row mt-10">
+        <button class="col-2 float-right btn btn-danger" (click)="logOut(employeeCode)">Logout</button>
+        <button class="offset-8 col-2 float-left btn btn-success" (click)="download()">Download User details</button></div>
+    <div class="row mt-20">
+        <div class="col-sm-4" *ngFor="let user of users">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <label for="Name">Name:</label>
+                        <h3 class="card-title">{{user.name}}</h3>
+                        <label for="EmployeeCode">Employee Code:</label>
+                        <h5 class="card-sub-title">{{user.employeeCode}}</h5>
+                        <label for="DateOfBirth">Date of Birth:</label>
+                        <p class="card-text">{{user.dateOfBirth | date}}</p>
+                        <button class="btn btn-outline-success btn-sm mr-1"
+                            (click)="checkInCheckOut(user.employeeCode)">Check In Check Out</button>
+                        <button class="btn btn-outline-danger btn-sm" (click)="deleteUsers(user.employeeCode)">Delete
+                            User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
